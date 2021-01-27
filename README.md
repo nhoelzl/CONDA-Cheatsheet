@@ -18,6 +18,11 @@ $ conda create -n [my-env-name] python=[python-version]
 $ source activate [my-env-name]
 ```
 
+### deactivate the environment you created
+```
+$ conda deactivate
+```
+
 ### take a look at the environment you created
 ```
 $ conda info
@@ -48,4 +53,10 @@ $ conda list --export > requirements.txt
 ### create environment file 
 ```
 $ conda env export > environment.yml
+```
+
+### update your environment according to the yaml file
+```
+$ conda activate [my-env-name]
+$ conda env update --file local.yml
 ```
